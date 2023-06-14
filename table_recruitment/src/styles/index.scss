@@ -1,0 +1,11 @@
+@charset "utf-8";
+@import "node_modules\\bulma\\bulma.sass";
+
+.author-row {
+  width: 100%;
+  overflow: hidden;
+}
+.authors-table {
+  @extend .table;
+  //   table-layout: fixed;
+}

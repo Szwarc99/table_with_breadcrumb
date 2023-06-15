@@ -8,6 +8,7 @@ export interface IBook {
   authors: string[];
   title: string;
   categories: string[];
+  description: string;
 }
 
 export interface IAuthor {

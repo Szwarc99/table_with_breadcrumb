@@ -9,8 +9,7 @@ export interface ITable {
 export function Table(props: ITable) {
   const [breadcrumb, setBreadcrumb] = useState(["Authors"]);
 
-  console.log("bread test: " + breadcrumb);
-
+  //function passed to children components allowing to update breadcrumb
   const handleBreadcrumbUpdate = (label: string, level: number) => {
     if (label === "") {
       setBreadcrumb(breadcrumb.slice(0, level));
@@ -35,21 +34,6 @@ export function Table(props: ITable) {
               </li>
             );
           })}
-          {/* <li>
-            <button
-              className="button is-primary is-inverted"
-              onClick={() => setSelected("")}
-            >
-              Authors
-            </button>
-          </li>
-          {selected !== "" && (
-            <li>
-              <button className="button is-primary is-inverted">
-                {selected}
-              </button>
-            </li>
-          )} */}
         </ul>
       </nav>
       <table className="authors-table">

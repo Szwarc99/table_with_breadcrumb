@@ -6,6 +6,7 @@ import "./styles/index.scss";
 function App() {
   const [data, setData] = useState<ITable>({ data: [] });
 
+  //fetching books by the list of authors and updating state data with results
   useEffect(() => {
     const fetchData = async () => {
       try {

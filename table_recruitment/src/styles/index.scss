@@ -3,9 +3,25 @@
 
 .author-row {
   width: 100%;
-  overflow: hidden;
+}
+.author-row-selected {
+  background-color: hsla(172, 100%, 27%, 0.92);
+  font-weight: bold;
+}
+.book-row {
+  width: 100%;
+  background-color: hsla(172, 50%, 90%, 0.92);
+}
+.book-row-selected {
+  width: 100%;
+  background-color: hsla(172, 44%, 67%, 0.92);
+  font-weight: 600;
 }
 .authors-table {
   @extend .table;
-  //   table-layout: fixed;
+  width: 100%;
+  table-layout: fixed;
+}
+.narrow-column {
+  width: 2.5%;
 }
